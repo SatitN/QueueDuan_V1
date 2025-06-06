@@ -1,8 +1,8 @@
-from flask import Flask
-from booking import booking_bp
-from notify import notify_bp
-from auth import auth_bp
-from export import export_bp
+from backend.flask import Flask
+from backend.booking import booking_bp
+from backend.notify import notify_bp
+from backend.auth import auth_bp
+from backend.export import export_bp
 
 app = Flask(__name__)
 app.register_blueprint(booking_bp, url_prefix="/api/book")
